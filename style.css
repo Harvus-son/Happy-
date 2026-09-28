@@ -21,3 +21,9 @@ h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(60px,11v
 .toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:#211d26;color:white;padding:13px 20px;border-radius:99px;font-size:12px;opacity:0;pointer-events:none;transition:.4s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:800px){.characters{grid-template-columns:1fr 1fr;gap:10px}.center-note{display:none}.character-panel{height:440px}.man{transform:translateX(-50%) scale(.82);transform-origin:bottom}.wish-grid{grid-template-columns:1fr 1fr}.hero{min-height:78vh}}
 @media(max-width:520px){h1{letter-spacing:-2px}.characters{grid-template-columns:1fr}.character-panel{height:390px}.character-panel.right{display:none}.wish-grid{grid-template-columns:1fr}.letter{padding-top:80px}.letter-card{padding:48px 25px}.letter-card p{font-size:14px;line-height:1.8}}
+
+.sister-badge{display:inline-block;margin:0 auto 20px;padding:9px 18px;border:1px solid #d99ab4;border-radius:999px;color:#a35e7d;font-size:10px;font-weight:800;letter-spacing:4px;background:#fff8fbcc;box-shadow:0 8px 25px #9b54721c}
+.reference-character{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.88) contrast(.96);transition:transform .7s ease,filter .7s ease}
+.character-panel:hover .reference-character{transform:scale(1.04);filter:saturate(1) contrast(1)}
+.generated-character-panel{display:none}
+@media(max-width:520px){.sister-badge{margin-bottom:14px}}
